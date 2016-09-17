@@ -15,7 +15,8 @@ void newLine();
 
 int main(){
     Student stud;
-    cout << "Enter student records: \n";
+    float sum, ave;
+    cout << "Enter Student Record: \n";
     cout << "ID: ";
     cin >> stud.id;
     newLine();
@@ -28,12 +29,22 @@ int main(){
     }
     
     cout << "\n\n";
-    cout << "Display student records\n";
+    cout << "Student Record:\n";
     cout << "ID: " << stud.id << endl;
     cout << "Name: " << stud.name.givenName << endl;
     for(int i=0; i<3; i++){
-        cout << "Grade "<< i << ": " << stud.grade[i] << endl;        
+        sum = sum + stud.grade[i];  
     }
+    
+	ave = sum/3;
+    cout << "Grades: " << ave << endl;
+    
+    if(ave>=75)
+    	cout << "Remarks: Passed";
+	else if(ave<75)
+		cout << "Remarks: Failed";
+	else
+		cout << "Remarks: Invalid Grade";
     
     system("pause > 0");
     return 0;   
