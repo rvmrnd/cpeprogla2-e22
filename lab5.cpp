@@ -20,7 +20,7 @@ int main(){
     cout << "ID: ";
     cin >> stud.id;
     newLine();
-    cout << "First Name: ";
+    cout << "Name: ";
     cin.getline(stud.name.givenName, 29);
 
     for(int i=0; i<3; i++){
