@@ -67,7 +67,7 @@ struct Student{
    double id[5];
    Name name[5];
    double grade[3];
-   float ave[3], sum[3];  
+   float ave[5], sum[5];  
 };
 
 void newLine();
